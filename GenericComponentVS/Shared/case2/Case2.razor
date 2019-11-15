@@ -1,0 +1,8 @@
+﻿@typeparam TItem
+@inherits Case2Base<Case2<TItem>,TItem>
+
+
+
+@code {
+    [Parameter] public IEnumerable<TItem> Data { get; set; } // for type infer
+}
